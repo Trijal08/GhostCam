@@ -56,7 +56,7 @@ jobs:
           echo "AKANE_RELEASE_KEY_PASSWORD=${{ secrets.KEY_PWD }}" >> ~/.gradle/gradle.properties
 
       - name: Build with Gradle
-        run: ./gradlew :app:assembleRelease
+        run: ./gradlew build
 
       - name: Find apk
         run: |
